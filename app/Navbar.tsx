@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
     return (
-      <header className='navbar bg-base-200 text-neutral-content h-8 z-50'>
+      <header className='navbar bg-base-200 text-neutral-content h-8 z-50 sticky top-0'>
           <div className="flex-1">
             <Link className='btn text-2xl' href='/'>
               Nextfolio
@@ -16,7 +16,7 @@ const Navbar = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
               </div>
-              <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+              <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box">
                 <li className='bg-inherit'>
                   <Link className="btn btn-sm" href='/resume'>
                     Resume
@@ -25,6 +25,11 @@ const Navbar = () => {
                 <li className='bg-inherit'>
                   <Link className="btn btn-sm" href='/portfolio'>
                     Portfolio
+                  </Link>
+                  </li>
+                  <li className='bg-inherit'>
+                  <Link className="btn btn-sm" href='/contact'>
+                    Contact
                   </Link>
                   </li>
               </ul>
