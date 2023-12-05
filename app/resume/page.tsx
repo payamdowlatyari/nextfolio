@@ -127,7 +127,7 @@ const Resume = () => {
           <div className="collapse-title text-xl font-medium text-center uppercase">
            Skills
           </div>
-          <div className="collapse-content m-2"> 
+          <div className="collapse-content"> 
           <div className="divider"><span className="badge badge-outline m-1">Frontend</span></div>
             <div className="flex flex-row justify-center">
               <span className="tooltip" data-tip="CSS3">
@@ -206,7 +206,7 @@ const Resume = () => {
             <div className="flex flex-row justify-center">
             <p className="text-xs sm:basis-1/2 lg:basis-3/5 m-2">
             Abstract: The research community on the study and design of systems for personal informatics has grown over the past decade. 
-            To take stock of what the topics the field has studied and methods the field has used, we map and label 523 publications from ACM's library, IEEE Xplore, 
+            To take stock of what the topics the field has studied and methods the field has used, we map and label 523 publications from ACM library, IEEE Xplore, 
             and PubMed. We surface that the literature has focused on studying and designing for health and wellness domains, an emphasis on understanding and overcoming barriers to data collection and reflection, 
             and progressively fewer contributions involving artifacts being made. Our mapping review suggests directions future research could explore, such as identifying and resolving barriers to tracking stages 
             beyond collection and reflection, engaging more with domain experts, and further discussing the privacy and ethical concerns around tracked data.
