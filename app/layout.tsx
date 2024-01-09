@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en" data-theme="nord">
       <body className={inter.className}>
         <ThemeProvider attribute='class' defaultTheme='nord'>
-          <main className='flex flex-col justify-between bg-base-200 text-inherit min-h-screen'>
+          <main className='flex flex-col justify-between bg-base-200 text-inherit min-h-screen font-sans'>
             <Navbar />
             <div className='p-4'>{children}</div>
             <Footer />

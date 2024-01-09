@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
       <header className='navbar bg-base-200 text-neutral-content h-8 z-50 sticky top-0'>
           <div className="flex-1">
-            <Link className='btn text-2xl' href='/'>
+            <Link className='btn text-xl uppercase' href='/'>
               Nextfolio
             </Link>
           </div>
@@ -18,6 +18,16 @@ const Navbar = () => {
               </div>
               <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box">
                 <li className='bg-inherit'>
+                  <Link className="btn btn-sm" href='/about'>
+                    About
+                  </Link>
+                  </li>
+                  <li className='bg-inherit'>
+                  <Link className="btn btn-sm" href='/contact'>
+                    Contact
+                  </Link>
+                  </li>
+                <li className='bg-inherit'>
                   <Link className="btn btn-sm" href='/resume'>
                     Resume
                   </Link>
@@ -25,11 +35,6 @@ const Navbar = () => {
                 <li className='bg-inherit'>
                   <Link className="btn btn-sm" href='/portfolio'>
                     Portfolio
-                  </Link>
-                  </li>
-                  <li className='bg-inherit'>
-                  <Link className="btn btn-sm" href='/contact'>
-                    Contact
                   </Link>
                   </li>
               </ul>

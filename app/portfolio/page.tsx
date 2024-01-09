@@ -1,100 +1,49 @@
 'use client'
 
+import  data  from './data';
+
 export default function Portfolio () {
     return (
-        <div className="flex justify-center w-full h-full scale-110">
-        <div className="h-96 w-96 carousel carousel-vertical rounded-box">
-            <div className="carousel-item h-full">
-                <div className="card card-compact w-full h-full shadow-xl">
-                    <figure><img className="object-fill grayscale scale-95 hover:grayscale-0 hover:scale-100 duration-300" 
-                    src="https://storage.googleapis.com/www.payamd.com/Portfolio/PaperBrowser.png" alt="Paper Browser" /></figure>
-                    <div className="card-body">
-                    <h2 className="card-title">Paper Browser</h2>
-                    <p>A research manegement user intrface</p>
-                        <p>
-                        <span className="badge badge-neutral text-xs mx-1">Angular</span>
-                        <span className="badge badge-neutral text-xs mx-1">Bootstrap</span>
-                        </p>
-                        <div className="card-actions justify-end">
-                            <a href="https://personal-informatics.depstein.net/" className="btn btn-accent btn-xs" target="_blank">Show Project</a>
+        <div className="flex justify-center w-full h-full items-center">
+        <div className="h-[24rem] lg:h-[32rem] w-4/5 md:w-3/4 lg:w-3/6 carousel carousel-vertical rounded-box bg-base-100">
+            {data.map((item: any) => {
+                  return  (
+                    <div className="carousel-item h-full">
+                        <div className="card card-compact w-full h-full shadow-xl">
+                            <figure><img className="object-fill scale-100 hover:scale-110 duration-300" 
+                            src={item.img} alt={item.title} /></figure>
+                                <div className="card-body">
+                                <h2 className="card-title">{item.title}</h2>
+                                <p>{item.description}</p>
+                                <p>
+                                    {item.tags.map((tag: any) => {
+                                        return  <span className="badge badge-neutral text-xs mx-1">{tag}</span>
+                                    })}
+                                </p>
+                                    <div className="card-actions justify-end">
+                                        <a href={item.url} className="btn btn-accent btn-xs" target="_blank">Show Project</a>
+                                    </div>
+                                </div>
+                                <div className=' flex flex-row justify-center'>
+                                    <p>
+                                    {item.pos[0] ?
+                                   <svg className="h-6 w-6 animate-bounce text-inherit"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+                                    </svg>: ''}
+
+                                    {item.pos[1] ?
+                                    <svg className="h-6 w-6 animate-bounce text-inherit"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg> : ''}
+                                </p>
+                                </div>
                         </div>
-                    </div>
-                </div>          
-            </div> 
-            <div className="carousel-item h-full">
-            <div className="card card-compact w-full h-full shadow-xl">
-                    <figure><img className="object-fill grayscale scale-95 hover:grayscale-0 hover:scale-100 duration-300" 
-                    src="https://storage.googleapis.com/www.payamd.com/Portfolio/MyDash_Projects_L.png" alt="My Dashbaord" /></figure>
-                    <div className="card-body">
-                        <h2 className="card-title">My Dashbaord</h2>
-                        <p>A project management user intrface</p>
-                        <p>
-                        <span className="badge badge-neutral text-xs mx-1">React.js</span>
-                        <span className="badge badge-neutral text-xs mx-1">Node.js</span>
-                        <span className="badge badge-neutral text-xs mx-1">Express.js</span>
-                        <span className="badge badge-neutral text-xs mx-1">MongoDB</span>
-                        </p>
-                        <div className="card-actions justify-end">
-                        <a href="https://dashboard-mern-r47l.vercel.app/" className="btn btn-accent btn-xs" target="_blank">Show Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <div className="carousel-item h-full">
-            <div className="card card-compact w-full h-full shadow-xl">
-                    <figure><img className="object-fill grayscale scale-95 hover:grayscale-0 hover:scale-100 duration-300" 
-                    src="https://storage.googleapis.com/www.payamd.com/Portfolio/M-Studio2.png" alt="M-Studios" /></figure>
-                    <div className="card-body">
-                        <h2 className="card-title">M-Studios</h2>
-                        <p>A responsive business portfolio</p>
-                        <p>
-                        <span className="badge badge-neutral text-xs mx-1">JavaScript</span>
-                        <span className="badge badge-neutral text-xs mx-1">Bootstrap</span>
-                        </p>
-                        <div className="card-actions justify-end">
-                        <a href="https://m-studios.us/" className="btn btn-accent btn-xs" target="_blank">Show Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <div className="carousel-item h-full">
-            <div className="card card-compact w-full h-full shadow-xl">
-                    <figure><img className="object-fill grayscale scale-95 hover:grayscale-0 hover:scale-100 duration-300" 
-                    src="https://storage.googleapis.com/www.payamd.com/Portfolio/CalPlug.png" alt="Admin Web Portal" /></figure>
-                    <div className="card-body">
-                        <h2 className="card-title">Admin Web Portal</h2>
-                        <p>A full-stack admin application</p>
-                        <p>
-                        <span className="badge badge-neutral text-xs mx-1">React.js</span>
-                        <span className="badge badge-neutral text-xs mx-1">Node.js</span>
-                        <span className="badge badge-neutral text-xs mx-1">Express.js</span>
-                        <span className="badge badge-neutral text-xs mx-1">MongoDB</span>
-                        </p>
-                        <div className="card-actions justify-end">
-                        <a href="https://payamdowlatyari.github.io/admin-web-portal/" className="btn btn-accent btn-xs" target="_blank">Show Project</a>
-                        </div>
-                    </div>
-                </div>            
-            </div> 
-            <div className="carousel-item h-full">
-            <div className="card card-compact w-full h-full shadow-xl">
-                    <figure><img className="object-fill grayscale scale-95 hover:grayscale-0 hover:scale-100 duration-300" 
-                    src="https://storage.googleapis.com/www.payamd.com/Portfolio/PhotoASL_2.png" alt="PHOTOASL" /></figure>
-                    <div className="card-body">
-                        <h2 className="card-title">PHOTOASL 2.0</h2>
-                        <p>A photo Gallery</p>
-                        <p>
-                        <span className="badge badge-neutral text-xs mx-1">React.js</span>
-                        <span className="badge badge-neutral text-xs mx-1">Ant Design</span>
-                        <span className="badge badge-neutral text-xs mx-1">react-photo-gallery</span>
-                        </p>
-                        <div className="card-actions justify-end">
-                        <a href="https://project-react-app-one.vercel.app/" className="btn btn-accent btn-xs" target="_blank">Show Project</a>
-                        </div>
-                    </div>
-                </div>            
-            </div> 
+                    </div>          
+                    )
+                })}
             </div>
+   
+
         </div>
     );
 }
