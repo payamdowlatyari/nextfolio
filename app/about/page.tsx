@@ -10,10 +10,10 @@ export default function About() {
                 <h1 className="text-2xl font-bold">My name is Payam Dowlatyari.</h1>
                 <p className="py-6">
                 
-                I'm a software engineer, UX designer, photographer, and blogger.
+                I am a software engineer, UX designer, photographer, and blogger.
                 I studied Software Engineering at UC Irvine and joined Amplify.ai in 2020.
                 I have designed and implemented web applications and user interfaces since 2019.
-                I'm interested in reading about psychology, sociology, philosophy, history, and enjoy walking, cycling and taking photographs.                    </p>
+                I am interested in reading about psychology, sociology, philosophy, history, and enjoy walking, cycling and taking photographs.                    </p>
                 <a href="/resume" className="btn btn-outline glass link no-underline mx-1 rounded">My Resume</a>
                 <a href="/portfolio" className="btn btn-outline glass link no-underline mx-1 rounded">My Portfolio</a>
                 </div>
