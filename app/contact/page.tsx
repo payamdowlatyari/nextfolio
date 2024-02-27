@@ -8,8 +8,8 @@ export default function Contact() {
                 <pre data-prefix="$"><code>get in touch</code></pre> 
                 <pre data-prefix=">" className="text-warning"><code>email...</code></pre> 
                 <pre data-prefix=">"><code>pdowlatyari@gmail.com</code></pre> 
-                <pre data-prefix=">" className="text-warning"><code>call...</code></pre> 
-                <pre data-prefix=">"><code>+1 916 547 8918</code></pre> 
+                <pre data-prefix=">" className="text-warning"><code>website...</code></pre> 
+                <pre data-prefix=">"><code>https://payamd.com</code></pre> 
             </div>
         </div>
     );

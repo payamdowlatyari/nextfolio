@@ -34,14 +34,11 @@ export default function Home() {
             <h1 className="flex flex-col text-6xl font-black leading-none uppercase font-bebas-neue sm:text-8xl">
                 Hello. 
                 <span className="text-4xl sm:text-6xl">
-                    I am
-                </span>
-                <span className="text-3xl sm:text-5xl text-sky-500">
-                    Payam Dowlatyari
+                    Welcome to my Portfolio
                 </span>
             </h1>
             <p className="text-sm sm:text-base ">
-            Software Engineer and UX Designer            
+            Powered by with Next.js and Tailwind.css            
             </p>
             <div className="flex mt-8">
                 <a href="/contact" className="btn bg-orange-500 hover:bg-orange-600 mx-1 rounded">
@@ -54,20 +51,6 @@ export default function Home() {
             <img src="https://storage.googleapis.com/www.payamd.com/svg/coding.svg" className="max-w-xs m-auto md:max-w-sm"/>
         </div>
     </div>
-</div> 
-
-
-      // <div className="hero h-[34rem]" style={{backgroundImage: 'url(https://storage.googleapis.com/www.payamd.com/Portfolio/xkimb2wzqsjmlpeuytvz.jpeg)'}}>
-      //   <div className="hero-overlay bg-opacity-60"></div>
-      //     <div className="hero-content text-center text-neutral-content">
-      //       <div className="h-full">
-      //       <h1 className="mb-5 text-5xl font-bold">Payam Dowlatyari</h1>
-      //         <p className="mb-5 max-w-md">
-      //         I am a software engineer, UX designer, photographer, and blogger.
-      //         </p>
-      //       <a href="/contact" className="btn glass link no-underline">Get In Touch</a>
-      //     </div>
-      //   </div>
-      // </div>   
+</div>  
   );
 }

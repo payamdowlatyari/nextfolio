@@ -5,15 +5,10 @@ export default function About() {
         <div className="flex justify-center w-full h-full items-center">
         <div className="hero w-4/5 bg-base-200">
             <div className="hero-content flex-col lg:flex-row">
-                <img src="https://storage.googleapis.com/www.payamd.com/Portfolio/me-sf2.jpeg" className="w-60 brightness-110 rounded-lg shadow-2xl" />
                 <div>
-                <h1 className="text-2xl font-bold">My name is Payam Dowlatyari.</h1>
+                <h1 className="text-2xl font-bold">Hello.</h1>
                 <p className="py-6">
-                
-                I am a software engineer, UX designer, photographer, and blogger.
-                I studied Software Engineering at UC Irvine and joined Amplify.ai in 2020.
-                I have designed and implemented web applications and user interfaces since 2019.
-                I am interested in reading about psychology, sociology, philosophy, history, and enjoy walking, cycling and taking photographs.                    </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae et leo duis ut diam quam nulla porttitor massa. Magnis dis parturient montes nascetur ridiculus mus mauris. Lacus vel facilisis volutpat est. Volutpat lacus laoreet non curabitur gravida arcu ac tortor.                    </p>
                 <a href="/resume" className="btn btn-outline glass link no-underline mx-1 rounded">My Resume</a>
                 <a href="/portfolio" className="btn btn-outline glass link no-underline mx-1 rounded">My Portfolio</a>
                 </div>
