@@ -1,5 +1,3 @@
-'use client'
-
 import  data  from './data';
 
 export default function Portfolio () {
